@@ -1,0 +1,23 @@
+{
+  "name": "contract-assistant-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "date-fns": "^4.1.0",
+    "express": "^5.1.0",
+    "mammoth": "^1.10.0",
+    "mongoose": "^8.18.1",
+    "pdf-parse": "^1.1.1",
+    "pino": "^9.9.4"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}
