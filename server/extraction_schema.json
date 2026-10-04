@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["items"],
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "value",
+          "responsibleParty",
+          "sourceQuote",
+          "confidence"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "party",
+              "effective_date",
+              "expiry_date",
+              "renewal",
+              "notice",
+              "termination",
+              "obligation",
+              "ambiguity"
+            ]
+          },
+          "value": {
+            "type": [
+              "string",
+              "object",
+              "array",
+              "null"
+            ]
+          },
+          "responsibleParty": {
+            "type": ["string", "null"]
+          },
+          "sourceQuote": {
+            "type": ["string", "null"]
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["confirmed", "uncertain"]
+          }
+        }
+      }
+    }
+  }
+}
