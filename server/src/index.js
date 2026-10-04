@@ -8,7 +8,7 @@ import { logger } from "./logger.js";
 import healthRouter from "./routes/health.js";
 import itemsRouter from "./routes/items.js";
 import contractsRouter from "./routes/contracts.js";
-import cors from "cors";
+
 
 const app = express();
 const port = process.env.PORT || 5000;
